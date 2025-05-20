@@ -1,9 +1,4 @@
-// const http = require('http')
 
-// const app = http.createServer((request, response) => {
-//   response.writeHead(200, { 'Content-Type': 'text/html' })
-//   response.end('<h1>Hello World</h1>')
-// })
 const express = require('express')
 const app = express()
 const PORT = 3001
@@ -11,8 +6,6 @@ const cors = require('cors');
 
 app.use(cors());
 
-// app.listen(PORT)
-// console.log(`Servidor a correr na porta ${PORT}`)
 let notes = [
     { id: 1, content: "HTML is easy", important: true },
     { id: 2, content: "Browser can execute only JavaScript", important: false },
